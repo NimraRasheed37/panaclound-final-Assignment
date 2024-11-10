@@ -943,11 +943,13 @@ height: 60px;
   font-size: 1.5em;
 }
 .project-request p{
-  width: 90%;
+  width: 100%;
   font-size: 14px;
 }
-.project-inputs input{
-  padding: 1em;
+.project-inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 /* Our contacts section */
@@ -974,15 +976,17 @@ height: 60px;
 
 /* Our portfolio */
 .portfolio-section p{
-  font-size: 14px;
+  font-size: 12px;
   width: 100%;
 }
 .portfolio-section ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   font-size: 10px;
 }
 .portfolio-img{
-  grid-template-columns: repeat(3, 1fr);
-  width: 90%;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
 }
 /*Header styling*/
 header{
@@ -990,15 +994,14 @@ header{
   padding: 1em;
 }
 .head-icons{
-  gap: 8px;
+  gap: 4px;
 }
 .head-icons a{
   font-size: 14px;
 }
-
 .head-btn{
   padding: .7em 1em;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .logo img{
